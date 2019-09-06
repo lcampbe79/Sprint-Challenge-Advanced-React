@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 
+import Navbar from './components/Navbar.js'
 import PlayersList from './components/PlayersList.js'
 
 class App extends React.Component {
@@ -23,6 +24,7 @@ class App extends React.Component {
     // console.log(this.state)
     return (
       <div className="App">
+        <Navbar />
         <PlayersList players={this.state.players} key={this.state.players.id}/>
       </div>
     );
