@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 
+import PlayersList from './components/PlayersList.js'
 
 class App extends React.Component {
   constructor() {
@@ -22,7 +23,7 @@ class App extends React.Component {
     // console.log(this.state)
     return (
       <div className="App">
-      
+        <PlayersList players={this.state.players} />
       </div>
     );
   }
