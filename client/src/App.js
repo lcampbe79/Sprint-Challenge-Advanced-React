@@ -23,7 +23,7 @@ class App extends React.Component {
     // console.log(this.state)
     return (
       <div className="App">
-        <PlayersList players={this.state.players} />
+        <PlayersList players={this.state.players} key={this.state.players.id}/>
       </div>
     );
   }
