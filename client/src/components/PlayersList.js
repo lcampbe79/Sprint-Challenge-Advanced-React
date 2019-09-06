@@ -10,7 +10,7 @@ const PlayersList = props => {
             <Card.Content header={player.name} />
             <Card.Content description={player.country} />
             <Card.Content extra>
-              <Icon name='map marker alternate' />{player.searches} Searches
+              <Icon name='search' />{player.searches} Searches
             </Card.Content>
           </Card>
         )}
