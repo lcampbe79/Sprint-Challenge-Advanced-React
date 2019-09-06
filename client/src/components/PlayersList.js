@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Icon } from 'semantic-ui-react';
 
 const PlayersList = props => {
-  //console.log('PlayersList: props', props)
+  console.log('PlayersList: props', props)
   
 
   return(
@@ -12,7 +12,7 @@ const PlayersList = props => {
             <Card.Content header={player.name} />
             <Card.Content description={player.country} />
             <Card.Content extra>
-              <Icon name='search' />{player.search} Searches
+              <Icon name='search' /> {player.searches} Searches
             </Card.Content>
           </Card>
         )}
