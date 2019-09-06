@@ -18,7 +18,7 @@ class App extends React.Component {
     .then(res => this.setState({players: res.data}))
     .catch(err => console.log('App.js: axios call: Server Error', err));
   }
-  
+
   render() {
     // console.log(this.state)
     return (
